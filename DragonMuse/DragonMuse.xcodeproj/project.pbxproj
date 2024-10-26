@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AA10D55A9F5AA49E3172353 /* Pods_DragonMuse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091DE2D0AE2D4313ED1D675A /* Pods_DragonMuse.framework */; };
+		FF1303B52CCCDEDF001E7E8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303AB2CCCDEDF001E7E8F /* AppDelegate.swift */; };
+		FF1303B62CCCDEDF001E7E8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303B22CCCDEDF001E7E8F /* SceneDelegate.swift */; };
+		FF1303B72CCCDEDF001E7E8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303B32CCCDEDF001E7E8F /* ViewController.swift */; };
+		FF1303B82CCCDEDF001E7E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1303AC2CCCDEDF001E7E8F /* Assets.xcassets */; };
+		FF1303BA2CCCDEDF001E7E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1303AF2CCCDEDF001E7E8F /* LaunchScreen.storyboard */; };
+		FF1303BB2CCCDEDF001E7E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1303B12CCCDEDF001E7E8F /* Main.storyboard */; };
+		FF1303E02CCCE050001E7E8F /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303CC2CCCE050001E7E8F /* Poppins-ExtraLight.ttf */; };
+		FF1303E12CCCE050001E7E8F /* ArtCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1303DC2CCCE050001E7E8F /* ArtCell.xib */; };
+		FF1303E22CCCE050001E7E8F /* UploadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF1303DE2CCCE050001E7E8F /* UploadCell.xib */; };
+		FF1303E32CCCE050001E7E8F /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303CA2CCCE050001E7E8F /* Poppins-ExtraBold.ttf */; };
+		FF1303E42CCCE050001E7E8F /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303C72CCCE050001E7E8F /* Poppins-BlackItalic.ttf */; };
+		FF1303E52CCCE050001E7E8F /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303CF2CCCE050001E7E8F /* Poppins-Light.ttf */; };
+		FF1303E62CCCE050001E7E8F /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303D12CCCE050001E7E8F /* Poppins-Medium.ttf */; };
+		FF1303E72CCCE050001E7E8F /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303CE2CCCE050001E7E8F /* Poppins-Italic.ttf */; };
+		FF1303E82CCCE050001E7E8F /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303D02CCCE050001E7E8F /* Poppins-LightItalic.ttf */; };
+		FF1303E92CCCE050001E7E8F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303D32CCCE050001E7E8F /* Poppins-Regular.ttf */; };
+		FF1303EA2CCCE050001E7E8F /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303CB2CCCE050001E7E8F /* Poppins-ExtraBoldItalic.ttf */; };
+		FF1303EB2CCCE050001E7E8F /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303D42CCCE050001E7E8F /* Poppins-SemiBold.ttf */; };
+		FF1303EC2CCCE050001E7E8F /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303C62CCCE050001E7E8F /* Poppins-Black.ttf */; };
+		FF1303ED2CCCE050001E7E8F /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303D72CCCE050001E7E8F /* Poppins-ThinItalic.ttf */; };
+		FF1303EE2CCCE050001E7E8F /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303D62CCCE050001E7E8F /* Poppins-Thin.ttf */; };
+		FF1303EF2CCCE050001E7E8F /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303C92CCCE050001E7E8F /* Poppins-BoldItalic.ttf */; };
+		FF1303F02CCCE050001E7E8F /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303D22CCCE050001E7E8F /* Poppins-MediumItalic.ttf */; };
+		FF1303F12CCCE050001E7E8F /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = FF1303C52CCCE050001E7E8F /* OFL.txt */; };
+		FF1303F22CCCE050001E7E8F /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303D52CCCE050001E7E8F /* Poppins-SemiBoldItalic.ttf */; };
+		FF1303F32CCCE050001E7E8F /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303C82CCCE050001E7E8F /* Poppins-Bold.ttf */; };
+		FF1303F42CCCE050001E7E8F /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303CD2CCCE050001E7E8F /* Poppins-ExtraLightItalic.ttf */; };
+		FF1303F52CCCE050001E7E8F /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303BD2CCCE050001E7E8F /* FirstVC.swift */; };
+		FF1303F62CCCE050001E7E8F /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303C22CCCE050001E7E8F /* PopVC.swift */; };
+		FF1303F72CCCE050001E7E8F /* PerfomanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303C12CCCE050001E7E8F /* PerfomanceVC.swift */; };
+		FF1303F82CCCE050001E7E8F /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303C02CCCE050001E7E8F /* MoreVC.swift */; };
+		FF1303F92CCCE050001E7E8F /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303DB2CCCE050001E7E8F /* ArtCell.swift */; };
+		FF1303FA2CCCE050001E7E8F /* UploadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303DD2CCCE050001E7E8F /* UploadCell.swift */; };
+		FF1303FB2CCCE050001E7E8F /* KFDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303D92CCCE050001E7E8F /* KFDesignable.swift */; };
+		FF1303FC2CCCE050001E7E8F /* HouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303BE2CCCE050001E7E8F /* HouseVC.swift */; };
+		FF1303FD2CCCE050001E7E8F /* MixedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303BF2CCCE050001E7E8F /* MixedVC.swift */; };
+		FF1303FE2CCCE050001E7E8F /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303C32CCCE050001E7E8F /* UploadVC.swift */; };
+		FF1303FF2CCCE050001E7E8F /* AbstractVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303BC2CCCE050001E7E8F /* AbstractVC.swift */; };
+		FF1304012CCCE113001E7E8F /* DragonMuseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1304002CCCE113001E7E8F /* DragonMuseNavigationController.swift */; };
+		FF1304052CCCE2F6001E7E8F /* DragonMusePrivacyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1304042CCCE2F6001E7E8F /* DragonMusePrivacyVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		091DE2D0AE2D4313ED1D675A /* Pods_DragonMuse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DragonMuse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B654D68D7BCBBF6A62F484 /* Pods-DragonMuse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragonMuse.release.xcconfig"; path = "Target Support Files/Pods-DragonMuse/Pods-DragonMuse.release.xcconfig"; sourceTree = "<group>"; };
+		84A835090BF41740D66C5624 /* Pods-DragonMuse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DragonMuse.debug.xcconfig"; path = "Target Support Files/Pods-DragonMuse/Pods-DragonMuse.debug.xcconfig"; sourceTree = "<group>"; };
+		FF1303932CCCDED9001E7E8F /* DragonMuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonMuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1303AB2CCCDEDF001E7E8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF1303AC2CCCDEDF001E7E8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF1303AD2CCCDEDF001E7E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1303AE2CCCDEDF001E7E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF1303B02CCCDEDF001E7E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF1303B22CCCDEDF001E7E8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF1303B32CCCDEDF001E7E8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF1303BC2CCCE050001E7E8F /* AbstractVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractVC.swift; sourceTree = "<group>"; };
+		FF1303BD2CCCE050001E7E8F /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		FF1303BE2CCCE050001E7E8F /* HouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseVC.swift; sourceTree = "<group>"; };
+		FF1303BF2CCCE050001E7E8F /* MixedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedVC.swift; sourceTree = "<group>"; };
+		FF1303C02CCCE050001E7E8F /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		FF1303C12CCCE050001E7E8F /* PerfomanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfomanceVC.swift; sourceTree = "<group>"; };
+		FF1303C22CCCE050001E7E8F /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
+		FF1303C32CCCE050001E7E8F /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
+		FF1303C52CCCE050001E7E8F /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		FF1303C62CCCE050001E7E8F /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		FF1303C72CCCE050001E7E8F /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		FF1303C82CCCE050001E7E8F /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		FF1303C92CCCE050001E7E8F /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		FF1303CA2CCCE050001E7E8F /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		FF1303CB2CCCE050001E7E8F /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		FF1303CC2CCCE050001E7E8F /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		FF1303CD2CCCE050001E7E8F /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		FF1303CE2CCCE050001E7E8F /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		FF1303CF2CCCE050001E7E8F /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		FF1303D02CCCE050001E7E8F /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		FF1303D12CCCE050001E7E8F /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		FF1303D22CCCE050001E7E8F /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		FF1303D32CCCE050001E7E8F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		FF1303D42CCCE050001E7E8F /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		FF1303D52CCCE050001E7E8F /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		FF1303D62CCCE050001E7E8F /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		FF1303D72CCCE050001E7E8F /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		FF1303D92CCCE050001E7E8F /* KFDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFDesignable.swift; sourceTree = "<group>"; };
+		FF1303DB2CCCE050001E7E8F /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
+		FF1303DC2CCCE050001E7E8F /* ArtCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtCell.xib; sourceTree = "<group>"; };
+		FF1303DD2CCCE050001E7E8F /* UploadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadCell.swift; sourceTree = "<group>"; };
+		FF1303DE2CCCE050001E7E8F /* UploadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadCell.xib; sourceTree = "<group>"; };
+		FF1304002CCCE113001E7E8F /* DragonMuseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonMuseNavigationController.swift; sourceTree = "<group>"; };
+		FF1304022CCCE2F6001E7E8F /* DragonMuse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DragonMuse-Bridging-Header.h"; sourceTree = "<group>"; };
+		FF1304032CCCE2F6001E7E8F /* DragonMusePrivacyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragonMusePrivacyVC.h; sourceTree = "<group>"; };
+		FF1304042CCCE2F6001E7E8F /* DragonMusePrivacyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragonMusePrivacyVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF1303902CCCDED9001E7E8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA10D55A9F5AA49E3172353 /* Pods_DragonMuse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E4D25F736A4709B7BE1F185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84A835090BF41740D66C5624 /* Pods-DragonMuse.debug.xcconfig */,
+				81B654D68D7BCBBF6A62F484 /* Pods-DragonMuse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BBF0CD2EF84F06B80B488808 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				091DE2D0AE2D4313ED1D675A /* Pods_DragonMuse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF13038A2CCCDED9001E7E8F = {
+			isa = PBXGroup;
+			children = (
+				FF1303B42CCCDEDF001E7E8F /* DragonMuse */,
+				FF1303942CCCDED9001E7E8F /* Products */,
+				1E4D25F736A4709B7BE1F185 /* Pods */,
+				BBF0CD2EF84F06B80B488808 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF1303942CCCDED9001E7E8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF1303932CCCDED9001E7E8F /* DragonMuse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF1303B42CCCDEDF001E7E8F /* DragonMuse */ = {
+			isa = PBXGroup;
+			children = (
+				FF1303AB2CCCDEDF001E7E8F /* AppDelegate.swift */,
+				FF1303B22CCCDEDF001E7E8F /* SceneDelegate.swift */,
+				FF1303AC2CCCDEDF001E7E8F /* Assets.xcassets */,
+				FF1303AD2CCCDEDF001E7E8F /* Info.plist */,
+				FF1303AF2CCCDEDF001E7E8F /* LaunchScreen.storyboard */,
+				FF1303B12CCCDEDF001E7E8F /* Main.storyboard */,
+				FF1303B32CCCDEDF001E7E8F /* ViewController.swift */,
+				FF1304002CCCE113001E7E8F /* DragonMuseNavigationController.swift */,
+				FF1303C42CCCE050001E7E8F /* Controller */,
+				FF1303DA2CCCE050001E7E8F /* Helper */,
+				FF1303DF2CCCE050001E7E8F /* View */,
+			);
+			path = DragonMuse;
+			sourceTree = "<group>";
+		};
+		FF1303C42CCCE050001E7E8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF1303BD2CCCE050001E7E8F /* FirstVC.swift */,
+				FF1304032CCCE2F6001E7E8F /* DragonMusePrivacyVC.h */,
+				FF1304042CCCE2F6001E7E8F /* DragonMusePrivacyVC.m */,
+				FF1303BC2CCCE050001E7E8F /* AbstractVC.swift */,
+				FF1303BE2CCCE050001E7E8F /* HouseVC.swift */,
+				FF1303BF2CCCE050001E7E8F /* MixedVC.swift */,
+				FF1303C02CCCE050001E7E8F /* MoreVC.swift */,
+				FF1303C12CCCE050001E7E8F /* PerfomanceVC.swift */,
+				FF1303C22CCCE050001E7E8F /* PopVC.swift */,
+				FF1303C32CCCE050001E7E8F /* UploadVC.swift */,
+				FF1304022CCCE2F6001E7E8F /* DragonMuse-Bridging-Header.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF1303D82CCCE050001E7E8F /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				FF1303C52CCCE050001E7E8F /* OFL.txt */,
+				FF1303C62CCCE050001E7E8F /* Poppins-Black.ttf */,
+				FF1303C72CCCE050001E7E8F /* Poppins-BlackItalic.ttf */,
+				FF1303C82CCCE050001E7E8F /* Poppins-Bold.ttf */,
+				FF1303C92CCCE050001E7E8F /* Poppins-BoldItalic.ttf */,
+				FF1303CA2CCCE050001E7E8F /* Poppins-ExtraBold.ttf */,
+				FF1303CB2CCCE050001E7E8F /* Poppins-ExtraBoldItalic.ttf */,
+				FF1303CC2CCCE050001E7E8F /* Poppins-ExtraLight.ttf */,
+				FF1303CD2CCCE050001E7E8F /* Poppins-ExtraLightItalic.ttf */,
+				FF1303CE2CCCE050001E7E8F /* Poppins-Italic.ttf */,
+				FF1303CF2CCCE050001E7E8F /* Poppins-Light.ttf */,
+				FF1303D02CCCE050001E7E8F /* Poppins-LightItalic.ttf */,
+				FF1303D12CCCE050001E7E8F /* Poppins-Medium.ttf */,
+				FF1303D22CCCE050001E7E8F /* Poppins-MediumItalic.ttf */,
+				FF1303D32CCCE050001E7E8F /* Poppins-Regular.ttf */,
+				FF1303D42CCCE050001E7E8F /* Poppins-SemiBold.ttf */,
+				FF1303D52CCCE050001E7E8F /* Poppins-SemiBoldItalic.ttf */,
+				FF1303D62CCCE050001E7E8F /* Poppins-Thin.ttf */,
+				FF1303D72CCCE050001E7E8F /* Poppins-ThinItalic.ttf */,
+			);
+			path = Poppins;
+			sourceTree = "<group>";
+		};
+		FF1303DA2CCCE050001E7E8F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FF1303D82CCCE050001E7E8F /* Poppins */,
+				FF1303D92CCCE050001E7E8F /* KFDesignable.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FF1303DF2CCCE050001E7E8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF1303DB2CCCE050001E7E8F /* ArtCell.swift */,
+				FF1303DC2CCCE050001E7E8F /* ArtCell.xib */,
+				FF1303DD2CCCE050001E7E8F /* UploadCell.swift */,
+				FF1303DE2CCCE050001E7E8F /* UploadCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF1303922CCCDED9001E7E8F /* DragonMuse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1303A62CCCDEDA001E7E8F /* Build configuration list for PBXNativeTarget "DragonMuse" */;
+			buildPhases = (
+				927495B4D7EB2677A258D9A3 /* [CP] Check Pods Manifest.lock */,
+				FF13038F2CCCDED9001E7E8F /* Sources */,
+				FF1303902CCCDED9001E7E8F /* Frameworks */,
+				FF1303912CCCDED9001E7E8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DragonMuse;
+			productName = DragonMuse;
+			productReference = FF1303932CCCDED9001E7E8F /* DragonMuse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF13038B2CCCDED9001E7E8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					FF1303922CCCDED9001E7E8F = {
+						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
+					};
+				};
+			};
+			buildConfigurationList = FF13038E2CCCDED9001E7E8F /* Build configuration list for PBXProject "DragonMuse" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF13038A2CCCDED9001E7E8F;
+			productRefGroup = FF1303942CCCDED9001E7E8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF1303922CCCDED9001E7E8F /* DragonMuse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF1303912CCCDED9001E7E8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1303E02CCCE050001E7E8F /* Poppins-ExtraLight.ttf in Resources */,
+				FF1303E12CCCE050001E7E8F /* ArtCell.xib in Resources */,
+				FF1303E22CCCE050001E7E8F /* UploadCell.xib in Resources */,
+				FF1303E32CCCE050001E7E8F /* Poppins-ExtraBold.ttf in Resources */,
+				FF1303E42CCCE050001E7E8F /* Poppins-BlackItalic.ttf in Resources */,
+				FF1303E52CCCE050001E7E8F /* Poppins-Light.ttf in Resources */,
+				FF1303E62CCCE050001E7E8F /* Poppins-Medium.ttf in Resources */,
+				FF1303E72CCCE050001E7E8F /* Poppins-Italic.ttf in Resources */,
+				FF1303E82CCCE050001E7E8F /* Poppins-LightItalic.ttf in Resources */,
+				FF1303E92CCCE050001E7E8F /* Poppins-Regular.ttf in Resources */,
+				FF1303EA2CCCE050001E7E8F /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				FF1303EB2CCCE050001E7E8F /* Poppins-SemiBold.ttf in Resources */,
+				FF1303EC2CCCE050001E7E8F /* Poppins-Black.ttf in Resources */,
+				FF1303ED2CCCE050001E7E8F /* Poppins-ThinItalic.ttf in Resources */,
+				FF1303EE2CCCE050001E7E8F /* Poppins-Thin.ttf in Resources */,
+				FF1303EF2CCCE050001E7E8F /* Poppins-BoldItalic.ttf in Resources */,
+				FF1303F02CCCE050001E7E8F /* Poppins-MediumItalic.ttf in Resources */,
+				FF1303F12CCCE050001E7E8F /* OFL.txt in Resources */,
+				FF1303F22CCCE050001E7E8F /* Poppins-SemiBoldItalic.ttf in Resources */,
+				FF1303F32CCCE050001E7E8F /* Poppins-Bold.ttf in Resources */,
+				FF1303F42CCCE050001E7E8F /* Poppins-ExtraLightItalic.ttf in Resources */,
+				FF1303B82CCCDEDF001E7E8F /* Assets.xcassets in Resources */,
+				FF1303BA2CCCDEDF001E7E8F /* LaunchScreen.storyboard in Resources */,
+				FF1303BB2CCCDEDF001E7E8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		927495B4D7EB2677A258D9A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DragonMuse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF13038F2CCCDED9001E7E8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1303B52CCCDEDF001E7E8F /* AppDelegate.swift in Sources */,
+				FF1304012CCCE113001E7E8F /* DragonMuseNavigationController.swift in Sources */,
+				FF1303B62CCCDEDF001E7E8F /* SceneDelegate.swift in Sources */,
+				FF1303B72CCCDEDF001E7E8F /* ViewController.swift in Sources */,
+				FF1303F52CCCE050001E7E8F /* FirstVC.swift in Sources */,
+				FF1303F62CCCE050001E7E8F /* PopVC.swift in Sources */,
+				FF1303F72CCCE050001E7E8F /* PerfomanceVC.swift in Sources */,
+				FF1303F82CCCE050001E7E8F /* MoreVC.swift in Sources */,
+				FF1303F92CCCE050001E7E8F /* ArtCell.swift in Sources */,
+				FF1303FA2CCCE050001E7E8F /* UploadCell.swift in Sources */,
+				FF1303FB2CCCE050001E7E8F /* KFDesignable.swift in Sources */,
+				FF1303FC2CCCE050001E7E8F /* HouseVC.swift in Sources */,
+				FF1304052CCCE2F6001E7E8F /* DragonMusePrivacyVC.m in Sources */,
+				FF1303FD2CCCE050001E7E8F /* MixedVC.swift in Sources */,
+				FF1303FE2CCCE050001E7E8F /* UploadVC.swift in Sources */,
+				FF1303FF2CCCE050001E7E8F /* AbstractVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF1303AF2CCCDEDF001E7E8F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF1303AE2CCCDEDF001E7E8F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FF1303B12CCCDEDF001E7E8F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF1303B02CCCDEDF001E7E8F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF1303A72CCCDEDA001E7E8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84A835090BF41740D66C5624 /* Pods-DragonMuse.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DragonMuse/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dragon Muse: Artistic Abode";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DragonMuse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DragonMuse/Controller/DragonMuse-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FF1303A82CCCDEDA001E7E8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81B654D68D7BCBBF6A62F484 /* Pods-DragonMuse.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DragonMuse/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dragon Muse: Artistic Abode";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DragonMuse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DragonMuse/Controller/DragonMuse-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FF1303A92CCCDEDA001E7E8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF1303AA2CCCDEDA001E7E8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF13038E2CCCDED9001E7E8F /* Build configuration list for PBXProject "DragonMuse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1303A92CCCDEDA001E7E8F /* Debug */,
+				FF1303AA2CCCDEDA001E7E8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1303A62CCCDEDA001E7E8F /* Build configuration list for PBXNativeTarget "DragonMuse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1303A72CCCDEDA001E7E8F /* Debug */,
+				FF1303A82CCCDEDA001E7E8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF13038B2CCCDED9001E7E8F /* Project object */;
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UploadCell" id="gTV-IL-0wX" customClass="UploadCell" customModule="My_Artisan_Studio" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rh5-xa-fTS">
+                        <rect key="frame" x="10" y="10" width="330" height="330"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CLA-mb-0Q2">
+                                <rect key="frame" x="10" y="10" width="310" height="310"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CLA-mb-0Q2" firstAttribute="top" secondItem="Rh5-xa-fTS" secondAttribute="top" constant="10" id="1Nt-Zy-3tn"/>
+                            <constraint firstItem="CLA-mb-0Q2" firstAttribute="leading" secondItem="Rh5-xa-fTS" secondAttribute="leading" constant="10" id="emq-zn-V3V"/>
+                            <constraint firstAttribute="trailing" secondItem="CLA-mb-0Q2" secondAttribute="trailing" constant="10" id="jC8-in-zVX"/>
+                            <constraint firstAttribute="bottom" secondItem="CLA-mb-0Q2" secondAttribute="bottom" constant="10" id="nke-VZ-Q6P"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Rh5-xa-fTS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="7gc-RL-v6m"/>
+                <constraint firstAttribute="trailing" secondItem="Rh5-xa-fTS" secondAttribute="trailing" constant="10" id="BJX-4E-92q"/>
+                <constraint firstItem="Rh5-xa-fTS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="c23-Kj-11t"/>
+                <constraint firstAttribute="bottom" secondItem="Rh5-xa-fTS" secondAttribute="bottom" constant="10" id="fvP-AE-Y7q"/>
+            </constraints>
+            <connections>
+                <outlet property="imgUpload" destination="CLA-mb-0Q2" id="8EL-fy-c3D"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="-11"/>
+        </collectionViewCell>
+    </objects>
+</document>
