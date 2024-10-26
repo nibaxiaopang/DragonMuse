@@ -2,7 +2,7 @@
 //  OxPowerReachManager.h
 //  OxPower
 //
-//  Created by OxPower on 2024/8/2.
+//  Created by Dragon Muse: Artistic Abode on 2024/8/2.
 //
 
 #import <Foundation/Foundation.h>

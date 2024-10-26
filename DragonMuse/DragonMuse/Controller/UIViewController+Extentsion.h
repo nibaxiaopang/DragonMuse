@@ -1,8 +1,8 @@
 //
 //  UIViewController+Extentsion.h
-//  OxPower
+//  Dragon Muse: Artistic Abode
 //
-//  Created by OxPower on 2024/8/2.
+//  Created by Dragon Muse: Artistic Abode on 2024/8/2.
 //
 
 #import <UIKit/UIKit.h>
