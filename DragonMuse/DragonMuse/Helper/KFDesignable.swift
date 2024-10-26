@@ -4,19 +4,19 @@ import CoreLocation
 import Foundation
 // you can set cornerRadius,borderWidth., ect in side storeboard.
 @IBDesignable
-class DesignableView: UIView {
+class DragonMuseDesignableView: UIView {
 }
 
 @IBDesignable
-class DesignableTextView: UITextView {
+class DragonMuseDesignableTextView: UITextView {
 }
 
 @IBDesignable
-class DesignableButton: UIButton {
+class DragonMuseDesignableButton: UIButton {
 }
 
 @IBDesignable
-class DesignableLabel: UILabel {
+class DragonMuseDesignableLabel: UILabel {
 }
 
 @IBDesignable
@@ -24,7 +24,7 @@ class DesignableImageView: UIImageView {
 }
 
 @IBDesignable
-class GradiantView : UIView{
+class DragonMuseGradiantView : UIView{
     
     @IBInspectable var firstColor : UIColor = UIColor.white{
         didSet{

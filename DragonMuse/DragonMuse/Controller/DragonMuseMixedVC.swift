@@ -1,5 +1,5 @@
 //
-//  PopVC.swift
+//  MixedVC.swift
 //  Dragon Muse: Artistic Abode
 //
 //  Created by SHREE KRISHNA on 25/10/24.
@@ -7,11 +7,12 @@
 
 import UIKit
 
-class PopVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class DragonMuseMixedVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var collViewMain: UICollectionView!
     
-    var arrPop = ["P1","P2","P3","P4","P5","P6","P7","P8","P9","P10","P11","P12","P13","P14","P15","P16"]
+    
+    var arrMixed = ["M1","M2","M3","M4","M5","M6","M7","M8","M9","M10"]
     var flowLayouts: UICollectionViewFlowLayout {
         let _flowLayout = UICollectionViewFlowLayout()
         
@@ -38,12 +39,12 @@ class PopVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSou
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrPop.count
+        return arrMixed.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collViewMain.dequeueReusableCell(withReuseIdentifier: "UploadCell", for: indexPath) as! UploadCell
-        cell.imgUpload.image = UIImage.init(named: arrPop[indexPath.row])
+        cell.imgUpload.image = UIImage.init(named: arrMixed[indexPath.row])
         return cell
     }
     
@@ -51,7 +52,7 @@ class PopVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSou
         let alert = UIAlertController.init(title: "Dragon Muse: Artistic Abode", message: nil, preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction.init(title: "Share Image", style: .default, handler: { alertYES in
             
-            self.shareImage(image: UIImage.init(named: self.arrPop[indexPath.row])!)
+            self.shareImage(image: UIImage.init(named: self.arrMixed[indexPath.row])!)
             
         }))
         
@@ -59,7 +60,7 @@ class PopVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSou
             
             let alertDelete = UIAlertController.init(title: "Dragon Muse: Artistic Abode", message: "Are You Sure To Download Art Image?", preferredStyle: .alert)
             alertDelete.addAction(UIAlertAction.init(title: "YES", style: .default, handler: { alertYES in
-                UIImageWriteToSavedPhotosAlbum(UIImage.init(named: self.arrPop[indexPath.row])!, self, #selector(self.image(_:didFinishSavingWithError:contextInfo:)), nil)
+                UIImageWriteToSavedPhotosAlbum(UIImage.init(named: self.arrMixed[indexPath.row])!, self, #selector(self.image(_:didFinishSavingWithError:contextInfo:)), nil)
                 
             }))
             alertDelete.addAction(UIAlertAction.init(title: "NO", style: .cancel))
@@ -91,6 +92,7 @@ class PopVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSou
             present(ac, animated: true)
         }
     }
+    
     
     @IBAction func Back(_ sender: Any) {
         navigationController?.popViewController(animated: true)

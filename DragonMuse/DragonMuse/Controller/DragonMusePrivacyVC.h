@@ -6,11 +6,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
+#import <Photos/Photos.h>
+#import "UIViewController+Extentsion.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DragonMusePrivacyVC : UIViewController
-
+@property (nonatomic, copy) NSString *url;
 @end
 
 NS_ASSUME_NONNULL_END

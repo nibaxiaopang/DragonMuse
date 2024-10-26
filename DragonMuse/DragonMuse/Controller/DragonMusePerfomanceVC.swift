@@ -1,5 +1,5 @@
 //
-//  AbstractVC.swift
+//  PerfomanceVC.swift
 //  Dragon Muse: Artistic Abode
 //
 //  Created by SHREE KRISHNA on 25/10/24.
@@ -7,58 +7,47 @@
 
 import UIKit
 
-class AbstractVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class DragonMusePerfomanceVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var collViewMain: UICollectionView!
+    @IBOutlet weak var tblView: UITableView!
+    var arrPerfomance = ["10","2","3","4","5","6","7","8","9","11","12","13","15","16"]
     
-    var arrAbstract = ["A2","A3","A4","A5","A6","A7","A8","A9","A10","A11","A12","A13","A14","A15","A16"]
-    var flowLayouts: UICollectionViewFlowLayout {
-        let _flowLayout = UICollectionViewFlowLayout()
-        
-        DispatchQueue.main.async {
-            _flowLayout.itemSize = CGSize(width: self.collViewMain.frame.size.width/2, height:320)
-            
-            _flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-            _flowLayout.scrollDirection = UICollectionView.ScrollDirection.vertical
-            _flowLayout.minimumInteritemSpacing = 0.0
-            _flowLayout.minimumLineSpacing = 0.0
-        }
-        
-        return _flowLayout
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tblView.delegate = self
+        tblView.dataSource = self
+        tblView.register(UINib.init(nibName: "ArtCell", bundle: nil), forCellReuseIdentifier: "ArtCell")
         navigationController?.navigationBar.isHidden = true
-        collViewMain.delegate = self
-        collViewMain.dataSource = self
-        collViewMain.register(UINib.init(nibName: "UploadCell", bundle: nil), forCellWithReuseIdentifier: "UploadCell")
-        collViewMain.collectionViewLayout = self.flowLayouts
     }
     
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrAbstract.count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return arrPerfomance.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collViewMain.dequeueReusableCell(withReuseIdentifier: "UploadCell", for: indexPath) as! UploadCell
-        cell.imgUpload.image = UIImage.init(named: arrAbstract[indexPath.row])
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tblView.dequeueReusableCell(withIdentifier: "ArtCell") as! ArtCell
+        cell.imgArt.image = UIImage.init(named: arrPerfomance[indexPath.row])
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let alert = UIAlertController.init(title: "Dragon Muse: Artistic Abode", message: nil, preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction.init(title: "Share Image", style: .default, handler: { alertYES in
             
-            self.shareImage (image: UIImage.init(named: self.arrAbstract[indexPath.row])!)
+            self.shareImage(image: UIImage.init(named: self.arrPerfomance[indexPath.row])!)
+            
         }))
         
         alert.addAction(UIAlertAction.init(title: "Download image", style: .default, handler: { alertYES in
             
             let alertDelete = UIAlertController.init(title: "Dragon Muse: Artistic Abode", message: "Are You Sure To Download Art Image?", preferredStyle: .alert)
             alertDelete.addAction(UIAlertAction.init(title: "YES", style: .default, handler: { alertYES in
-                UIImageWriteToSavedPhotosAlbum(UIImage.init(named: self.arrAbstract[indexPath.row])!, self, #selector(self.image(_:didFinishSavingWithError:contextInfo:)), nil)
+                UIImageWriteToSavedPhotosAlbum(UIImage.init(named: self.arrPerfomance[indexPath.row])!, self, #selector(self.image(_:didFinishSavingWithError:contextInfo:)), nil)
                 
             }))
             alertDelete.addAction(UIAlertAction.init(title: "NO", style: .cancel))
@@ -68,7 +57,6 @@ class AbstractVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         
         alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel))
         self.present(alert, animated: true)
-        
     }
     
     func shareImage(image: UIImage) {
@@ -90,10 +78,10 @@ class AbstractVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
             present(ac, animated: true)
         }
     }
-    
     @IBAction func Back(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    
     
     
 }

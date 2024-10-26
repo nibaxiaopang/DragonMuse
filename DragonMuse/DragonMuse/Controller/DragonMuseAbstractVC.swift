@@ -1,5 +1,5 @@
 //
-//  MixedVC.swift
+//  AbstractVC.swift
 //  Dragon Muse: Artistic Abode
 //
 //  Created by SHREE KRISHNA on 25/10/24.
@@ -7,12 +7,11 @@
 
 import UIKit
 
-class MixedVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class DragonMuseAbstractVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var collViewMain: UICollectionView!
     
-    
-    var arrMixed = ["M1","M2","M3","M4","M5","M6","M7","M8","M9","M10"]
+    var arrAbstract = ["A2","A3","A4","A5","A6","A7","A8","A9","A10","A11","A12","A13","A14","A15","A16"]
     var flowLayouts: UICollectionViewFlowLayout {
         let _flowLayout = UICollectionViewFlowLayout()
         
@@ -39,12 +38,12 @@ class MixedVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrMixed.count
+        return arrAbstract.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collViewMain.dequeueReusableCell(withReuseIdentifier: "UploadCell", for: indexPath) as! UploadCell
-        cell.imgUpload.image = UIImage.init(named: arrMixed[indexPath.row])
+        cell.imgUpload.image = UIImage.init(named: arrAbstract[indexPath.row])
         return cell
     }
     
@@ -52,15 +51,14 @@ class MixedVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         let alert = UIAlertController.init(title: "Dragon Muse: Artistic Abode", message: nil, preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction.init(title: "Share Image", style: .default, handler: { alertYES in
             
-            self.shareImage(image: UIImage.init(named: self.arrMixed[indexPath.row])!)
-            
+            self.shareImage (image: UIImage.init(named: self.arrAbstract[indexPath.row])!)
         }))
         
         alert.addAction(UIAlertAction.init(title: "Download image", style: .default, handler: { alertYES in
             
             let alertDelete = UIAlertController.init(title: "Dragon Muse: Artistic Abode", message: "Are You Sure To Download Art Image?", preferredStyle: .alert)
             alertDelete.addAction(UIAlertAction.init(title: "YES", style: .default, handler: { alertYES in
-                UIImageWriteToSavedPhotosAlbum(UIImage.init(named: self.arrMixed[indexPath.row])!, self, #selector(self.image(_:didFinishSavingWithError:contextInfo:)), nil)
+                UIImageWriteToSavedPhotosAlbum(UIImage.init(named: self.arrAbstract[indexPath.row])!, self, #selector(self.image(_:didFinishSavingWithError:contextInfo:)), nil)
                 
             }))
             alertDelete.addAction(UIAlertAction.init(title: "NO", style: .cancel))
@@ -92,7 +90,6 @@ class MixedVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
             present(ac, animated: true)
         }
     }
-    
     
     @IBAction func Back(_ sender: Any) {
         navigationController?.popViewController(animated: true)

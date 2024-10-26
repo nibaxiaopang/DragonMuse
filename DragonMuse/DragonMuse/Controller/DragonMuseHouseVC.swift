@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HouseVC: UIViewController {
+class DragonMuseHouseVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,29 +20,29 @@ class HouseVC: UIViewController {
     }
     
     @IBAction func Drawing(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HouseVC") as! HouseVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "HouseVC") as! DragonMuseHouseVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func Favorite(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "UploadVC") as! UploadVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "UploadVC") as! DragonMuseUploadVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func Abstract(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AbstractVC") as! AbstractVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AbstractVC") as! DragonMuseAbstractVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func Perfomance(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PerfomanceVC") as! PerfomanceVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PerfomanceVC") as! DragonMusePerfomanceVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func PopArt(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PopVC") as! PopVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PopVC") as! DragonMusePopVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func MixedMedia(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MixedVC") as! MixedVC
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MixedVC") as! DragonMuseMixedVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

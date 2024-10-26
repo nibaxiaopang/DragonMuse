@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UploadVC: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
+class DragonMuseUploadVC: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
     
     
     @IBOutlet weak var collViewMain: UICollectionView!

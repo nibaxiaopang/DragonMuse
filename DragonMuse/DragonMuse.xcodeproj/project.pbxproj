@@ -35,19 +35,22 @@
 		FF1303F22CCCE050001E7E8F /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303D52CCCE050001E7E8F /* Poppins-SemiBoldItalic.ttf */; };
 		FF1303F32CCCE050001E7E8F /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303C82CCCE050001E7E8F /* Poppins-Bold.ttf */; };
 		FF1303F42CCCE050001E7E8F /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF1303CD2CCCE050001E7E8F /* Poppins-ExtraLightItalic.ttf */; };
-		FF1303F52CCCE050001E7E8F /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303BD2CCCE050001E7E8F /* FirstVC.swift */; };
-		FF1303F62CCCE050001E7E8F /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303C22CCCE050001E7E8F /* PopVC.swift */; };
-		FF1303F72CCCE050001E7E8F /* PerfomanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303C12CCCE050001E7E8F /* PerfomanceVC.swift */; };
-		FF1303F82CCCE050001E7E8F /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303C02CCCE050001E7E8F /* MoreVC.swift */; };
+		FF1303F52CCCE050001E7E8F /* DragonMuseFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303BD2CCCE050001E7E8F /* DragonMuseFirstVC.swift */; };
+		FF1303F62CCCE050001E7E8F /* DragonMusePopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303C22CCCE050001E7E8F /* DragonMusePopVC.swift */; };
+		FF1303F72CCCE050001E7E8F /* DragonMusePerfomanceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303C12CCCE050001E7E8F /* DragonMusePerfomanceVC.swift */; };
+		FF1303F82CCCE050001E7E8F /* DragonMuseMoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303C02CCCE050001E7E8F /* DragonMuseMoreVC.swift */; };
 		FF1303F92CCCE050001E7E8F /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303DB2CCCE050001E7E8F /* ArtCell.swift */; };
 		FF1303FA2CCCE050001E7E8F /* UploadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303DD2CCCE050001E7E8F /* UploadCell.swift */; };
 		FF1303FB2CCCE050001E7E8F /* KFDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303D92CCCE050001E7E8F /* KFDesignable.swift */; };
-		FF1303FC2CCCE050001E7E8F /* HouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303BE2CCCE050001E7E8F /* HouseVC.swift */; };
-		FF1303FD2CCCE050001E7E8F /* MixedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303BF2CCCE050001E7E8F /* MixedVC.swift */; };
-		FF1303FE2CCCE050001E7E8F /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303C32CCCE050001E7E8F /* UploadVC.swift */; };
-		FF1303FF2CCCE050001E7E8F /* AbstractVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303BC2CCCE050001E7E8F /* AbstractVC.swift */; };
+		FF1303FC2CCCE050001E7E8F /* DragonMuseHouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303BE2CCCE050001E7E8F /* DragonMuseHouseVC.swift */; };
+		FF1303FD2CCCE050001E7E8F /* DragonMuseMixedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303BF2CCCE050001E7E8F /* DragonMuseMixedVC.swift */; };
+		FF1303FE2CCCE050001E7E8F /* DragonMuseUploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303C32CCCE050001E7E8F /* DragonMuseUploadVC.swift */; };
+		FF1303FF2CCCE050001E7E8F /* DragonMuseAbstractVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1303BC2CCCE050001E7E8F /* DragonMuseAbstractVC.swift */; };
 		FF1304012CCCE113001E7E8F /* DragonMuseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1304002CCCE113001E7E8F /* DragonMuseNavigationController.swift */; };
 		FF1304052CCCE2F6001E7E8F /* DragonMusePrivacyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1304042CCCE2F6001E7E8F /* DragonMusePrivacyVC.m */; };
+		FFCAB7FE2CCCFEFC002D76D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFCAB7FD2CCCFEFC002D76D1 /* GoogleService-Info.plist */; };
+		FFCAB8032CCD0039002D76D1 /* UIViewController+Extentsion.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCAB8022CCD0039002D76D1 /* UIViewController+Extentsion.m */; };
+		FFCAB8042CCD0039002D76D1 /* DragonMuseReachManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FFCAB8002CCD0039002D76D1 /* DragonMuseReachManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,14 +65,14 @@
 		FF1303B02CCCDEDF001E7E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF1303B22CCCDEDF001E7E8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FF1303B32CCCDEDF001E7E8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FF1303BC2CCCE050001E7E8F /* AbstractVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractVC.swift; sourceTree = "<group>"; };
-		FF1303BD2CCCE050001E7E8F /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
-		FF1303BE2CCCE050001E7E8F /* HouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseVC.swift; sourceTree = "<group>"; };
-		FF1303BF2CCCE050001E7E8F /* MixedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedVC.swift; sourceTree = "<group>"; };
-		FF1303C02CCCE050001E7E8F /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
-		FF1303C12CCCE050001E7E8F /* PerfomanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfomanceVC.swift; sourceTree = "<group>"; };
-		FF1303C22CCCE050001E7E8F /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
-		FF1303C32CCCE050001E7E8F /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
+		FF1303BC2CCCE050001E7E8F /* DragonMuseAbstractVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonMuseAbstractVC.swift; sourceTree = "<group>"; };
+		FF1303BD2CCCE050001E7E8F /* DragonMuseFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonMuseFirstVC.swift; sourceTree = "<group>"; };
+		FF1303BE2CCCE050001E7E8F /* DragonMuseHouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonMuseHouseVC.swift; sourceTree = "<group>"; };
+		FF1303BF2CCCE050001E7E8F /* DragonMuseMixedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonMuseMixedVC.swift; sourceTree = "<group>"; };
+		FF1303C02CCCE050001E7E8F /* DragonMuseMoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonMuseMoreVC.swift; sourceTree = "<group>"; };
+		FF1303C12CCCE050001E7E8F /* DragonMusePerfomanceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonMusePerfomanceVC.swift; sourceTree = "<group>"; };
+		FF1303C22CCCE050001E7E8F /* DragonMusePopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonMusePopVC.swift; sourceTree = "<group>"; };
+		FF1303C32CCCE050001E7E8F /* DragonMuseUploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonMuseUploadVC.swift; sourceTree = "<group>"; };
 		FF1303C52CCCE050001E7E8F /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		FF1303C62CCCE050001E7E8F /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
 		FF1303C72CCCE050001E7E8F /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -98,6 +101,12 @@
 		FF1304022CCCE2F6001E7E8F /* DragonMuse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DragonMuse-Bridging-Header.h"; sourceTree = "<group>"; };
 		FF1304032CCCE2F6001E7E8F /* DragonMusePrivacyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragonMusePrivacyVC.h; sourceTree = "<group>"; };
 		FF1304042CCCE2F6001E7E8F /* DragonMusePrivacyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragonMusePrivacyVC.m; sourceTree = "<group>"; };
+		FFCAB7FD2CCCFEFC002D76D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FFCAB7FF2CCD0039002D76D1 /* DragonMuseReachManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragonMuseReachManager.h; sourceTree = "<group>"; };
+		FFCAB8002CCD0039002D76D1 /* DragonMuseReachManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragonMuseReachManager.m; sourceTree = "<group>"; };
+		FFCAB8012CCD0039002D76D1 /* UIViewController+Extentsion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extentsion.h"; sourceTree = "<group>"; };
+		FFCAB8022CCD0039002D76D1 /* UIViewController+Extentsion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extentsion.m"; sourceTree = "<group>"; };
+		FFCAB8052CCD030E002D76D1 /* DragonMuse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DragonMuse.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +159,8 @@
 		FF1303B42CCCDEDF001E7E8F /* DragonMuse */ = {
 			isa = PBXGroup;
 			children = (
+				FFCAB8052CCD030E002D76D1 /* DragonMuse.entitlements */,
+				FFCAB7FD2CCCFEFC002D76D1 /* GoogleService-Info.plist */,
 				FF1303AB2CCCDEDF001E7E8F /* AppDelegate.swift */,
 				FF1303B22CCCDEDF001E7E8F /* SceneDelegate.swift */,
 				FF1303AC2CCCDEDF001E7E8F /* Assets.xcassets */,
@@ -168,17 +179,21 @@
 		FF1303C42CCCE050001E7E8F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FF1303BD2CCCE050001E7E8F /* FirstVC.swift */,
+				FF1303BD2CCCE050001E7E8F /* DragonMuseFirstVC.swift */,
 				FF1304032CCCE2F6001E7E8F /* DragonMusePrivacyVC.h */,
 				FF1304042CCCE2F6001E7E8F /* DragonMusePrivacyVC.m */,
-				FF1303BC2CCCE050001E7E8F /* AbstractVC.swift */,
-				FF1303BE2CCCE050001E7E8F /* HouseVC.swift */,
-				FF1303BF2CCCE050001E7E8F /* MixedVC.swift */,
-				FF1303C02CCCE050001E7E8F /* MoreVC.swift */,
-				FF1303C12CCCE050001E7E8F /* PerfomanceVC.swift */,
-				FF1303C22CCCE050001E7E8F /* PopVC.swift */,
-				FF1303C32CCCE050001E7E8F /* UploadVC.swift */,
+				FF1303BC2CCCE050001E7E8F /* DragonMuseAbstractVC.swift */,
+				FF1303BE2CCCE050001E7E8F /* DragonMuseHouseVC.swift */,
+				FF1303BF2CCCE050001E7E8F /* DragonMuseMixedVC.swift */,
+				FF1303C02CCCE050001E7E8F /* DragonMuseMoreVC.swift */,
+				FF1303C12CCCE050001E7E8F /* DragonMusePerfomanceVC.swift */,
+				FF1303C22CCCE050001E7E8F /* DragonMusePopVC.swift */,
+				FF1303C32CCCE050001E7E8F /* DragonMuseUploadVC.swift */,
 				FF1304022CCCE2F6001E7E8F /* DragonMuse-Bridging-Header.h */,
+				FFCAB7FF2CCD0039002D76D1 /* DragonMuseReachManager.h */,
+				FFCAB8002CCD0039002D76D1 /* DragonMuseReachManager.m */,
+				FFCAB8012CCD0039002D76D1 /* UIViewController+Extentsion.h */,
+				FFCAB8022CCD0039002D76D1 /* UIViewController+Extentsion.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -240,6 +255,8 @@
 				FF13038F2CCCDED9001E7E8F /* Sources */,
 				FF1303902CCCDED9001E7E8F /* Frameworks */,
 				FF1303912CCCDED9001E7E8F /* Resources */,
+				F21D3336A15C786AF2659E0C /* [CP] Embed Pods Frameworks */,
+				FEE5077E51AF210F02D685C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -291,6 +308,7 @@
 			files = (
 				FF1303E02CCCE050001E7E8F /* Poppins-ExtraLight.ttf in Resources */,
 				FF1303E12CCCE050001E7E8F /* ArtCell.xib in Resources */,
+				FFCAB7FE2CCCFEFC002D76D1 /* GoogleService-Info.plist in Resources */,
 				FF1303E22CCCE050001E7E8F /* UploadCell.xib in Resources */,
 				FF1303E32CCCE050001E7E8F /* Poppins-ExtraBold.ttf in Resources */,
 				FF1303E42CCCE050001E7E8F /* Poppins-BlackItalic.ttf in Resources */,
@@ -341,6 +359,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F21D3336A15C786AF2659E0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DragonMuse/Pods-DragonMuse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DragonMuse/Pods-DragonMuse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DragonMuse/Pods-DragonMuse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEE5077E51AF210F02D685C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DragonMuse/Pods-DragonMuse-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DragonMuse/Pods-DragonMuse-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DragonMuse/Pods-DragonMuse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -352,18 +404,20 @@
 				FF1304012CCCE113001E7E8F /* DragonMuseNavigationController.swift in Sources */,
 				FF1303B62CCCDEDF001E7E8F /* SceneDelegate.swift in Sources */,
 				FF1303B72CCCDEDF001E7E8F /* ViewController.swift in Sources */,
-				FF1303F52CCCE050001E7E8F /* FirstVC.swift in Sources */,
-				FF1303F62CCCE050001E7E8F /* PopVC.swift in Sources */,
-				FF1303F72CCCE050001E7E8F /* PerfomanceVC.swift in Sources */,
-				FF1303F82CCCE050001E7E8F /* MoreVC.swift in Sources */,
+				FFCAB8032CCD0039002D76D1 /* UIViewController+Extentsion.m in Sources */,
+				FFCAB8042CCD0039002D76D1 /* DragonMuseReachManager.m in Sources */,
+				FF1303F52CCCE050001E7E8F /* DragonMuseFirstVC.swift in Sources */,
+				FF1303F62CCCE050001E7E8F /* DragonMusePopVC.swift in Sources */,
+				FF1303F72CCCE050001E7E8F /* DragonMusePerfomanceVC.swift in Sources */,
+				FF1303F82CCCE050001E7E8F /* DragonMuseMoreVC.swift in Sources */,
 				FF1303F92CCCE050001E7E8F /* ArtCell.swift in Sources */,
 				FF1303FA2CCCE050001E7E8F /* UploadCell.swift in Sources */,
 				FF1303FB2CCCE050001E7E8F /* KFDesignable.swift in Sources */,
-				FF1303FC2CCCE050001E7E8F /* HouseVC.swift in Sources */,
+				FF1303FC2CCCE050001E7E8F /* DragonMuseHouseVC.swift in Sources */,
 				FF1304052CCCE2F6001E7E8F /* DragonMusePrivacyVC.m in Sources */,
-				FF1303FD2CCCE050001E7E8F /* MixedVC.swift in Sources */,
-				FF1303FE2CCCE050001E7E8F /* UploadVC.swift in Sources */,
-				FF1303FF2CCCE050001E7E8F /* AbstractVC.swift in Sources */,
+				FF1303FD2CCCE050001E7E8F /* DragonMuseMixedVC.swift in Sources */,
+				FF1303FE2CCCE050001E7E8F /* DragonMuseUploadVC.swift in Sources */,
+				FF1303FF2CCCE050001E7E8F /* DragonMuseAbstractVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,11 +450,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DragonMuse/DragonMuse.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DragonMuse/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Dragon Muse: Artistic Abode";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Dragon Muse needs access to the camera function to take photos and share and save them.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Dragon Muse needs access to the photo album feature to save pictures to the photo album.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Dragon Muse needs access to your photo album to save downloaded images.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Dragon Muse needs access to obtain your device information for analysis and to bring you a unique gaming experience.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -412,7 +472,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.DragonMuse;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Abode.DragonMuse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -432,11 +492,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DragonMuse/DragonMuse.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DragonMuse/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Dragon Muse: Artistic Abode";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Dragon Muse needs access to the camera function to take photos and share and save them.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Dragon Muse needs access to the photo album feature to save pictures to the photo album.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Dragon Muse needs access to your photo album to save downloaded images.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Dragon Muse needs access to obtain your device information for analysis and to bring you a unique gaming experience.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -448,7 +514,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.DragonMuse;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Abode.DragonMuse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

@@ -8,7 +8,7 @@
 import UIKit
 import StoreKit
 
-class MoreVC: UIViewController {
+class DragonMuseMoreVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +20,22 @@ class MoreVC: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func Privacy(_ sender: Any) {
-        guard let url = URL(string: "https://www.privacypolicies.com/live/72438b31-1117-48b9-8174-8584ea9e6a2b") else { return }
-        UIApplication.shared.open(url)
-    }
     
     @IBAction func Rate(_ sender: Any) {
         
-        SKStoreReviewController.requestReview()
+        if #available(iOS 18.0, *) {
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+                AppStore.requestReview(in: windowScene)
+            }
+        } else {
+            if let windowScene = UIApplication.shared.windows.first?.windowScene {
+                if #available(iOS 14.0, *) {
+                    SKStoreReviewController.requestReview(in: windowScene)
+                } else {
+                    SKStoreReviewController.requestReview()
+                }
+            }
+        }
         
     }
     

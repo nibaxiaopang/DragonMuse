@@ -6,5 +6,6 @@ target 'DragonMuse' do
   use_frameworks!
 
   # Pods for DragonMuse
-
+  pod 'Firebase/Messaging'
+  pod 'AppsFlyerFramework'
 end
